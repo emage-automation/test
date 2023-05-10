@@ -7,12 +7,7 @@ resources:
 #- github.com/kubernetes-sigs/kustomize/examples/helloWorld?ref=HEAD
 #- https://github.com/kubernetes-sigs/kustomize/tree/master/examples/helloWorld
 #- github.com/kubernetes-sigs/kustomize/examples/helloWorld?ref=HEAD
-
-- name: test
-  git:
-    repo: https://github.com/kubernetes-sigs/kustomize.git
-    ref: main
-    directory: examples/ldap/overlays/staging
+- https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.1/deploy/static/provider/cloud/deploy.yaml
 namePrefix: dev-
 nameSuffix: "-001"
 commonLabels:
