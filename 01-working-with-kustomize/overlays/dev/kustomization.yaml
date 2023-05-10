@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
 - ../../base
+- "git@github.com:kubernetes-sigs/kustomize/examples/helloWorld"
 namePrefix: dev-
 nameSuffix: "-001"
 commonLabels:
